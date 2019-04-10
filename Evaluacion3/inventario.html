@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <title>EVALUACIÓN 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form id="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Numero de inventario</label>
+                      <input type="number" class="form-control" id="nInventario" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Cantidad de productos</label>
+                        <input type="text" class="form-control" id="cantidad" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Costo de productos</label>
+                        <input type="number" class="form-control" id="costo" placeholder="">
+                      </div>
+                    <button type="button" id="btnE" class="btn btn-primary">ENTRADA</button>
+                    <button type="button" id="btnS" class="btn btn-warning">SALIDA</button>
+                  </form>
+            </div>
+
+            <div class="col-6">
+                <table class="table border" id="info">
+                    <tbody>
+                        <tr>
+                            <td>Num. Inventario</td>
+                            <td>Nombre</td>
+                            <td>Cantidad</td>
+                            <td>Costo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
