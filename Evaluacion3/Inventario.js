@@ -10,14 +10,14 @@ export default class Inventario{
     }
 
     _iniciarTabla(){
-        let lProducto = JSON.parse(localStorage.getItem("inven"));
+        let lProducto = JSON.parse(localStorage.getItem("inventarios"));
 
         if(lProducto === null){
             return;
         }
-        lProducto.forEach((e, index) => {
-            e.nInventario;
-          });
+        // lProducto.forEach((e, index) => {
+        //     e.nInventario;
+        //   });
           this._agregarTabla(new Producto(producto));
           console.log(lProducto);
     }
@@ -31,9 +31,9 @@ export default class Inventario{
         let cellCosto = row.insertCell(3);
 
         cellnI.innerHTML = producto.nInventario;
-        cellNombre = producto.nombre;
-        cellCantidad = producto.cantidad;
-        cellCosto = producto.costo;
+        cellNombre.innerHTML = producto.nombre;
+        cellCantidad.innerHTML = producto.cantidad;
+        cellCosto.innerHTML = producto.costo;
 
         let objProducto = {
             nInventario : nInventario,
@@ -65,7 +65,7 @@ export default class Inventario{
         // }
         this._agregarTabla(producto);
         console.log(this._inventario);
-        localStorage.setItem("inven", JSON.stringify(this._inventario));
+        localStorage.setItem("inventarios", JSON.stringify(this._inventario));
     
       }
 
